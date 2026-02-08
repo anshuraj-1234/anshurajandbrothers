@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title> M/s Anshu Raj and Brothers | Seeds & Pesticides</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Anshu Raj and Brothers - Trusted Seeds and Pesticides Store for Farmers">
+    
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial , sans-serif;
+            background-color: #f5f9f5;
+            color: #333;.slider{
+    position:absolute;
+    top:0;
+    left:0;
+    width:100%;
+    height:100%;
+    z-index:0;
+    overflow:hidden;
+}
+
+.slide{
+    position:absolute;
+    width:100%;
+    height:100%;
+    object-fit:cover;
+    opacity:0;
+    transition:opacity 1.5s ease-in-out;
+}
+
+.slide.active{
+    opacity:1;
+}
+
+/* hero text upar rahe */
+.hero *{
+    position:relative;
+    z-index:1;
+}
+
+        }
+        header {
+            background: #1b5e20;
+            color: white;
+            padding: 15px 30px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        header h1 {
+            margin: 0;
+            font-size: 30px;
+        }
+        nav a {
+            color: blue;
+            text-decoration: none;
+            margin-left: 15px;
+            font-weight: bold;
+        }
+        .hero {
+            background: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)),
+            url("https://images.unsplash.com/photo-1598514982845-35c33b3f72aa");
+            background-size: cover;
+            <div class="slider">
+    <img src="slide1.jpg" class="slide active">
+    <img src="slide2.jpg" class="slide">
+    <img src="slide3.jpg" class="slide">
+</div>
+
+<h2 class="shop-name">Anshu Raj and Brothers</h2>
+<p>उत्तम बीज और भरोसेमंद फसल सुरक्षा</p>
+<a href="#contact" class="btn">Contact Us</a>
+
+
+            padding: 80px 20px;
+            color: white;
+            text-align: center;
+        }
+        .hero h2 {
+            font-size: 36px;
+            margin-bottom: 10px;
+        }
+        .hero p {
+            font-size: 20px;
+        }
+        .btn {
+            display: inline-block;
+            margin-top: 20px;
+            padding: 12px 25px;
+            background: #2e7d32;
+            color: white;
+            text-decoration: none;
+            border-radius: 5px;
+            font-weight: bold;
+        }
+        section {
+            padding: 50px 20px;
+            max-width: 1100px;
+            margin: auto;
+        }
+        h3 {
+            text-align: center;
+            color: #1b5e20;
+            margin-bottom: 30px;
+        }
+        .cards {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 20px;
+        }
+        .card {
+            background: white;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+            text-align: center;
+        }
+        .card h4 {
+            color: #2e7d32;
+        }
+        .why-us li {
+            margin: 10px 0;
+            font-size: 16px;
+        }
+        footer {
+            background: #1b5e20;
+            color: white;
+            text-align: center;
+            padding: 15px;
+        }
+        .whatsapp {
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            background: #25d366;
+            color: white;
+            padding: 12px 18px;
+            border-radius: 50px;
+            text-decoration: none;
+            font-weight: bold;
+        }
+    </style>
+</head>
+
+<script>
+let slides = document.querySelectorAll(".slide");
+let index = 0;
+
+setInterval(() => {
+    slides[index].classList.remove("active");
+    index = (index + 1) % slides.length;
+    slides[index].classList.add("active");
+}, 3000); // 3 second me slide change
+</script>
+<body>
+
+<header>
+    <h1>Anshu Raj and Brothers</h1>
+    <nav>
+        <a href="#home">Home</a>
+        <a href="#about">About</a>
+        <a href="#products">Products</a>
+        <a href="#contact">Contact</a>
+    </nav>
+</header>
+
+<div class="hero" id="home">
+    <h2><h2>उत्तम बीज और भरोसेमंद फसल सुरक्षा</h2>
+<p>किसानों के लिए उच्च गुणवत्ता के बीज और कीटनाशक</p>
+</h2>
+    
+    <a href="#contact" class="btn">Contact Us</a>
+</div>
+
+<section id="about">
+    <h3>About Us</h3>
+    <p style="text-align:center;">
+        <b></b> अंशु राज एंड ब्रदर्स एक भरोसेमंद कृषि स्टोर है,
+               जहाँ उच्च गुणवत्ता के बीज, कीटनाशक  उपलब्ध हैं।
+.  
+        हम किसान भाइयों को  हाइब्रिड बीज , कीटनाशक  दवा  सही कृषि सलाह  उपलब्ध करवाते हैं | 
+    </p>
+</section>
+
+<section id="products">
+    <h3>Our Products</h3>
+    <div class="cards">
+        <div class="card">
+            <h4>Seeds</h4>
+            <p>Hybrid seeds, vegetable seeds, crop seeds</p>
+        </div>
+        <div class="card">
+            <h4>Pesticides</h4>
+            <p>Insecticides, fungicides, weed control</p>
+        </div>
+        <div class="card">
+            <h4>Fertilizers</h4>
+            <p>Soil nutrition & crop growth solutions</p>
+        </div>
+    </div>
+</section>
+
+<section>
+    <h3>Why Choose Us</h3>
+    <ul class="why-us">
+        <li>✔ 100% Genuine Products</li>
+        <li>✔ Farmer Friendly Guidance</li>
+        <li>✔ Reasonable Price</li>
+        <li>✔ Trusted Local Shop</li>
+    </ul>
+</section>
+
+<section id="contact">
+    <h3>Contact Us</h3>
+    <p style="text-align:center;">
+        📍 Address: Meyari Chowk , Surmar Meyari,Sarairanjan, Samastipur Bihar 848114 <br><br>
+        📞 Phone: +91-9006666463 <br><br>
+        💬 WhatsApp Available
+    </p>
+</section>
+
+<a class="whatsapp" href="https://wa.me/919006666463" target="_blank">
+    WhatsApp
+</a>
+
+<footer>
+    © 2026 Anshu Raj and Brothers | Seeds & Pesticides
+</footer>
+
+</body>
+</html>
